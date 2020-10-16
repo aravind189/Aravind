@@ -1,0 +1,61 @@
+1.Explain Kubernates Architechture ?
+--> there will be a master and slave node 
+--> master is responsible for maintain the entair cluster
+--> monitor all other nodes in the cluster.
+--> responsible for cantainers in worker nodes
+--> components in k8s is 
+  1. api server which acts as front end to the our server,user actually talks with cluster through api server
+  2. ETdc it is actually used for storage of all data and manage the cluster.
+  3. Sceduler which is actually resonsible to schedule the pod where there is a new pod is generates 
+  4. controller which is act as brain of k8s cluster 
+2. what about kublet in usecase.who basically create a pod on the node is kubapi scheduler kubelet runtime engine?
+--> kubelet is an agent which clumse on all nodes 
+--> docker will create the pod on worker node then the decesion will taken by the controller the environment 
+3.what is node selecter ?
+--> normally kubelet and controller randomly will create a pod 
+-->  if i want to create a particuler pod on particular worker node manually then we use the concept of node selecter.
+--> The basic idea behind the nodeSelector is to allow a Pod to be scheduled only on those nodes that have label(s) identical to the label(s) defined in the nodeSelector
+4.who basically schedule or identify the right worker node for the pod?
+--> scheduler will do that.
+5.suppose my scheduler will not be there is to possible to lunch pod?
+--> 
+6.What is resource ?
+-->A resource is an endpoint in the Kubernetes API that stores a collection of API objects of a certain kind; for example, the built-in pods resource contains a collection of Pod objects.
+--> if you want to restrict 
+7. What is node affinity ?
+--> Node affinity is a set of rules used by the scheduler to determine where a pod can be placed. The rules are defined using custom labels on nodes     and label selectors specified in pods. Node affinity allows a pod to specify an affinity (or anti-affinity) towards a group of nodes it can be     placed on.
+8.what is pvc?
+--> A PersistentVolumeClaim (PVC) is a request for storage by a user. It is similar to a Pod. Pods consume node resources and PVCs consume PV     resources. Pods can request specific levels of resources (CPU and Memory). Claims can request specific size and access modes
+9.What is resorce quota?
+-->provides constraints that limit aggregate resource
+ consumption per namespace.
+10.What is POD eviction?
+-->When a node in a Kubernetes cluster is running out of memory or disk, it activates a flag signaling that it is under pressure. This blocks any new allocation in the node and starts the eviction process.
+11.What is ingress and egress in Kubernetes?
+Ingress and egress
+
+From the point of view of a Kubernetes pod, ingress is incoming traffic to the pod, and egress is outgoing traffic from the pod. In Kubernetes network policy, you create ingress and egress “allow” rules independently 
+12.Namespace in kubernates?
+--> Namespaces are a way to divide cluster resources between multiple users.
+13.What is a replica set Kubernetes?
+A ReplicaSet ensures that a specified number of pod replicas are running at any given time. However, a Deployment is a higher-level concept that manages ReplicaSets and provides declarative updates to Pods along with a lot of other useful features.
+14. what is resource Request and limit ?
+    Resource Request: The amount of resources necessary to run a container 
+    Resource Limit: Maximum value for the resource usage of container
+15. Deamon set in k8s ?
+    Deamon set is ensuring all nodes run as a copy of pod. for example deployed in two pods in a node so every pod having its own monitoring tool for health checkup so that is not possible. So that condition will introduce a concept called deamon set. 
+    it will deploy one pod per node.one pod is scheduled on each node when deamon set menifesofile submitted to the api server
+    it is also used for deploying one pod per subset of nodes.as nodes are added to the cluster the deamon set will add the pod to the same node.
+16.Configmaps:
+   configmaps bind configaration files,command-line arguments,environmental variables, ConfigMaps enable you to separate your configurations from your Pods and components, which helps keep your workloads portable.This makes their configurations easier to change and manage,Configaration maps are used to store and share non sensitive data.
+17.services in k8s ?
+   1.cluster IP: Restrict the service with in the cluster and expose the service within the defined cluster.
+   2.NodePort: the service can be accesed from outside the cluster.
+   3.Load Balancer :Load balancer routes to your NodePort and ClusterIP services, which are created automatically.Distributing network trafic among the backend servers
+   4.external name :
+   
+LINUX
+-----
+9. Bangalore.7sep https://Outlook.Office.com/owa
+
+https://vodafone.sharepoint.com.eu.cas.ms/sites/SDNNFVCloud/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FSDNNFVCloud%2FShared%20Documents%2FNew%20joiner%20Onboarding

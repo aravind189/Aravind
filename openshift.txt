@@ -1,0 +1,23 @@
+1.What is openshift ?
+--> openshift is a kubernates platform for deploying our applications.it is fuuly managed platform as a service where will be deploying a containers.which enables the developers to develop and deploy their applications on cloud infrastructure.
+2. What are the features of OpenShift?
+--> 1.Multi-Environment support.
+    2.One-click deployment.
+    3.Responsive web console.
+    4.rest api support
+    5.in built database services.
+2. What are deployment strategies?
+-->In this strategy, users keep using the stable version denoted by green while changes are made in the new version denoted by blue. After testing and evaluating the new version in blue color, users can switch to the blue version. If any problem arises, then users could continue with the green version.
+3.Downward API in OpenShift?
+-->Downward API is a mechanism for pods to retrieve metadata without the need to call into Kubernetes API. Downward API is ideal for retrieving metadata and configuration of running pods.
+6. What are the feature toggles?
+-->These are techniques that help in including old and new versions of a feature in the same code base
+7.Outline the benefits of OpenShift Origin.
+-->The benefits include running PaaS locally on a system and behind a firewall. OpenShift Origin also helps in improving developer competences with PaaS and the expansion of skills.
+13. What is the Source-to-Image (S2I) strategy?
+Answer: This strategy involves the creation of source code images through downloading and compilation of the same container. The images are created from the same code, and with a custom strategy, rpm and jar get developed.
+14. How OpenShift uses Docker and Kubernetes?
+Answer: Kubernetes and Docker could work OpenShift in the form of a control system.The control system helps in enabling many deployment pipelines that are ideal for later use in auto-scaling, testing, and other processes.
+
+
+https://vodafone.sharepoint.com.eu.cas.ms/sites/SDNNFVCloud/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FSDNNFVCloud%2FShared%20Documents%2FNew%20joiner%20Onboarding%2Fvfq%5Fengagement%5Fjournal%2Epdf&parent=%2Fsites%2FSDNNFVCloud%2FShared%20Documents%2FNew%20joiner%20Onboarding

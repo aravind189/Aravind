@@ -1,0 +1,12 @@
+1. what is architechture of kubernates?
+2. Explain scheduler?
+3. explain Kube-proxy?
+4. what is configmap and where it use?
+5. what are the services in k8s?
+6. what are the componenets in pod.yml?
+7. how many componenets in menifestofile?
+8. what is diffrence between node affinity and node selector whic on best and why?
+9. what is pvc? explain more?
+10.what is request and limit?
+11.what is replica set and replica controller?
+12. What is daemonset?
